@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SQL Course - Mohamed Nasr</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Include Font Awesome -->
     <style>
         /* General Page Styles */
         body {
@@ -131,22 +132,22 @@
 
         /* Dark Mode Styles */
         body.dark-mode {
-            background: #2c2c2c;
-            color: #f1f1f1;
+            background: #333;
+            color: #e9eff1; /* Light text color */
         }
 
         body.dark-mode header {
-            background: #1a1a1a;
+            background: #444;
         }
 
         body.dark-mode .course-container {
-            background: #444;
-            color: #f1f1f1;
+            background: #555;
+            color: #e9eff1;
         }
 
         body.dark-mode .syntax-box {
-            background-color: #555;
-            color: #f1f1f1;
+            background-color: #666;
+            color: #e9eff1;
         }
 
         body.dark-mode .back-button {
@@ -155,7 +156,7 @@
         }
 
         body.dark-mode footer {
-            background: #1a1a1a;
+            background: #444;
         }
 
         /* Dark Mode Toggle Button */
@@ -166,7 +167,7 @@
             background-color: #003366;
             color: white;
             padding: 12px;
-            font-size: 1.5rem; /* Larger icon size */
+            font-size: 2rem; /* Larger icon size */
             border: none;
             cursor: pointer;
             border-radius: 50%;
@@ -188,7 +189,7 @@
 
     <!-- Dark Mode Toggle Button -->
     <button class="dark-mode-btn" onclick="toggleDarkMode()">
-        <i class="fas fa-moon"></i> <!-- Moon Icon -->
+        <i class="fas fa-moon" id="darkModeIcon"></i> <!-- Moon Icon -->
     </button>
 
     <!-- Header Section -->
@@ -234,15 +235,15 @@ SELECT * FROM students WHERE age > 18;
     <script>
         // Toggle Dark Mode
         function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    const icon = document.querySelector('.dark-mode-btn i');
-    // تغيير الأيقونة بين القمر والشمس
-    if (document.body.classList.contains('dark-mode')) {
-        icon.classList.replace('fa-moon', 'fa-sun');
-    } else {
-        icon.classList.replace('fa-sun', 'fa-moon');
-    }
-}
+            document.body.classList.toggle('dark-mode');
+            const icon = document.getElementById('darkModeIcon');
+            // Change icon to Sun when dark mode is active, Moon otherwise
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
     </script>
 </body>
 </html>

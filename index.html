@@ -186,7 +186,7 @@
         .social-links a {
             margin: 0 10px;
             color: white;
-            font-size: 1.5rem;
+            font-size: 2rem;
             transition: color 0.3s;
         }
 
@@ -296,15 +296,15 @@
             <li><a href="html-css-course.html">HTML & CSS</a></li>
             <li><a href="java-course.html">Java</a></li>
             <li><a href="sql-course.html">SQL</a></li>
-            <li><a href="kali-linux-course.html">Kali Linux</a></li>
-            <li><a href="ccna-course.html">CCNA</a></li>
-            <li><a href="security-plus-course.html">Security+</a></li>
-            <li><a href="ejpt-course.html">eJPT v1 & v2</a></li>
+            <li><a href="kali-linux.html">Kali Linux</a></li>
+            <li><a href="ccna.html">CCNA</a></li>
+            <li><a href="security-plus.html">Security+</a></li>
+            <li><a href="ejpt.html">eJPT</a></li>
         </ul>
     </section>
 
     <!-- Certificates Section -->
-    <section id="certificates" class="certificates">
+    <section class="certificates">
         <h2>Certificates</h2>
         <div class="carousel">
             <img src="./S+.jpg" alt="Certificate 1">
@@ -317,23 +317,27 @@
     <footer>
         <p>© 2024 Mohamed Nasr | All Rights Reserved</p>
         <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61553721451405&mibextid=ZbWKwL">Facebook</a>
-            <a href="https://www.instagram.com/mohammd.nasr.37/profilecard/?igsh=ZzMyOWF5YzJsM3Vu">Instagram</a>
-            <a href="https://www.linkedin.com/in/mohamed-nasr-103267335">LinkedIn</a>
+            <a href="https://www.facebook.com/profile.php?id=61553721451405&mibextid=ZbWKwL" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/mohammd.nasr.37/profilecard/?igsh=ZzMyOWF5YzJsM3Vu" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed-nasr-103267335" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/01280765582" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
         </div>
     </footer>
 
     <script>
-       function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    const icon = document.querySelector('.dark-mode-btn i');
-    // تغيير الأيقونة بين القمر والشمس
-    if (document.body.classList.contains('dark-mode')) {
-        icon.classList.replace('fa-moon', 'fa-sun');
-    } else {
-        icon.classList.replace('fa-sun', 'fa-moon');
-    }
-}
+        // Dark Mode Toggle Function
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
     </script>
+
 </body>
 </html>
